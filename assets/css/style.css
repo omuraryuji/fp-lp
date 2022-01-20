@@ -1,0 +1,281 @@
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*ヘッダーお問合せボタン*/
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+body {
+  max-width: 1025px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: '筑紫A丸ゴシック','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  color: #707070;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+img {
+  vertical-align:bottom;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*セクションタイトル*/
+
+.sec_title{
+  position: relative;
+  padding: 1.1rem 2rem;
+  color: #fff;
+  border-radius: 10px;
+  background: #094;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.sec_title:after {
+  position: absolute;
+  bottom: -9px;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #094 transparent transparent transparent;
+}
+
+.sec_title h2{
+  margin-bottom: 0;
+}
+
+/*ヘッダー*/
+
+.form_h{
+  display: flex;
+  justify-content: space-between;
+}
+.header_img{
+  background-image: url("../img/mv_01.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.header_img h1{
+  position: absolute;          
+   top: 40%;                 
+   left: 5%;
+   width: 40%;
+   font-family: Oriya MN;
+}
+.h_img{
+  padding-left: 10%;
+}
+
+/*モヤモヤ*/
+
+.moya_title{
+  text-align: center;
+}
+.moya_under{
+  background:rgba(0, 0, 0, 0) 
+  linear-gradient(transparent 80%, #ffff7f 0%) 
+  repeat scroll 0 0;
+}
+.moyamoya ul{
+  display: flex;
+  justify-content: space-between;
+}
+.moyamoya li{
+  width: 30%;
+}
+.moya_end{
+  background-color: #FFEFE5;
+  height: 60px;
+  position: relative;
+}
+.moya_end h2{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;      
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+
+/*ご相談はこちら*/
+.main_form{
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+.main_form ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.po img{
+  height: 70px;
+}
+.form_a{
+  display: flex;
+  justify-content: center;
+}
+.consultation{
+  text-align: center;
+}
+
+/*お客様への約束*/
+
+.promise_list{
+  background-image: url("../img/yakusoku.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:rgba(255,255,255,0.5);
+background-blend-mode:lighten;
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+}
+.pr_style{
+  font-size: 100px;
+  font-weight: bold;
+}
+.pr{
+  height: 100px;
+  text-align: center;
+}
+.pr_style,.pr_style2{
+  vertical-align: middle;
+}
+.pr_style2{
+  background:rgba(0, 0, 0, 0) 
+  linear-gradient(transparent 80%, 
+  #FFC2A7 0%) repeat scroll 0 0;
+}
+
+/*代表紹介*/
+.ceo{
+  display: flex;
+  width: 82%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.ce_person{
+  width:220px;
+  height: 330px;
+  display: flex;
+}
+
+.ce_left p{
+  width: 550px;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+
+/*サービス案内*/
+.service_list{
+  background-image: url("../img/shaikei.png");
+}
+.se img{
+  display: block;
+  width: 48%;
+  height: auto;
+}
+.s{
+  width: 48%;
+}
+.se {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*.se:not(:last-child) {
+  margin-bottom: 80px;*/
+
+
+.se:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/*他者とどう違うの*/
+.sub_title{
+  text-align: center;
+}
+table{
+  margin: 0 auto;
+}
+.table_left{
+  background-color: #EAEAEA;
+}
+.table_center{
+  background-color: #DBF4FF;
+}
+
+
+/*5つの理由*/
+.reason_list{
+
+}
+/*フッター*/
+.logo_f{
+  text-align: center;
+}
