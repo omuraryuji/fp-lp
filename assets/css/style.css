@@ -15,12 +15,12 @@ html {
 .btn,
 a.btn,
 button.btn {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
   position: relative;
   display: inline-block;
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -88,7 +88,6 @@ ul {
 .sec_title:after {
   position: absolute;
   bottom: -9px;
-  left: 1em;
   width: 0;
   height: 0;
   content: '';
@@ -107,13 +106,27 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.form_a{
+  display: flex;
+  flex-direction: column;
+}
+.form_z{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.phone{
+  display: flex;
+}
 .header_img{
   background-image: url("../img/mv_01.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
+  background-size: cover;
+  width: 100vw;
   height: 500px;
   position: relative;
+  margin: 0 calc(50% - 50vw);
+
 }
 .header_img h1{
   position: absolute;          
@@ -232,6 +245,8 @@ background-blend-mode:lighten;
 /*サービス案内*/
 .service_list{
   background-image: url("../img/shaikei.png");
+  background-color:rgba(255,255,255,0.6);
+background-blend-mode:lighten;
 }
 .se img{
   display: block;
@@ -262,19 +277,45 @@ background-blend-mode:lighten;
 }
 table{
   margin: 0 auto;
+  border-spacing: 10px;
 }
+
 .table_left{
   background-color: #EAEAEA;
+  width: 15%;
 }
 .table_center{
   background-color: #DBF4FF;
+  width: 20%;
 }
-
+tr:first-child{
+  height: 100px;
+}
+tr:not(:first-child){
+  height: 70px;
+}
 
 /*5つの理由*/
 .reason_list{
-
+  background-image: url("../img/5tunoriyuu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  margin: 0 calc(50% - 50vw);
+  background-position: bottom;
+  
 }
+
+/*質問*/
+.q_a{
+  background-image: url("../img/situhaikei.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60%;
+  height: 150px;
+}
+
 /*フッター*/
 .logo_f{
   text-align: center;
